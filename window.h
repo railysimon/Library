@@ -1,6 +1,7 @@
 #ifndef WINDOW_H
 #define WINDOW_H
 
+#include <QApplication>
 #include <QDialog>
 #include <QHBoxLayout>
 #include <QVBoxLayout>

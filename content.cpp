@@ -20,7 +20,7 @@ Content::~Content()
 
 void Content::Layout()
 {
-    this->setStyleSheet("background: rgb(161, 195, 94);");
+    this->setStyleSheet("background: rgb(61, 51, 51); color: white;");
     data = database->Reading();
 
     Newes *newes;
@@ -30,7 +30,7 @@ void Content::Layout()
         newes->setMinimumHeight(350);
 
         layout->addWidget(newes);
-        this->resize(350, (i+1)*350 + 50);
+        this->resize(360, (i+1)*350 + 50);
     }
 }
 

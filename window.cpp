@@ -21,8 +21,8 @@ void Window::Layout()
     search_line = new QLineEdit;
     search_line->setStyleSheet("background: rgb(245, 245, 245); border: 2px solid green;");
     search_line->setFont(QFont("Ubuntu", 10, QFont::Bold));
-    search_btn = button(QPixmap("search"), 25, 25);
-    reload_btn = button(QPixmap("restart"), 25, 26);
+    search_btn = button(QPixmap(QApplication::applicationDirPath() + "/search"), 25, 25);
+    reload_btn = button(QPixmap(QApplication::applicationDirPath() + "/restart"), 25, 26);
 
     top_layout->addWidget(search_line);
     top_layout->addWidget(search_btn);
@@ -30,7 +30,7 @@ void Window::Layout()
 
     QHBoxLayout *bottom_layer = new QHBoxLayout;
     bottom_layer->setAlignment(Qt::AlignCenter);
-    add_btn = button(QPixmap("add"), 25, 40);
+    add_btn = button(QPixmap(QApplication::applicationDirPath() + "/add"), 25, 40);
     bottom_layer->addWidget(add_btn);
 
     QVBoxLayout *layout = new QVBoxLayout;
@@ -38,7 +38,7 @@ void Window::Layout()
     layout->addWidget(scrollarea);
     layout->addLayout(bottom_layer);
     this->setLayout(layout);
-    this->setStyleSheet("background: rgb(116, 242, 187);");
+    this->setStyleSheet("background: rgb(86, 87, 88);");
     this->setFixedSize(400, 500);
     this->setWindowTitle("Publication library");
 }

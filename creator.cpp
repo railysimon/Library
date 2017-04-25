@@ -51,7 +51,7 @@ void Creator::Layout()
 
     this->setLayout(layout);
     this->setFixedSize(350, 450);
-    this->setStyleSheet("background: rgb(116, 242, 187);");
+    this->setStyleSheet("background: rgb(86, 87, 88);");
     this->setWindowTitle("Add new publication");
 
 }
